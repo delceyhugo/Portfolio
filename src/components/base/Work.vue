@@ -11,7 +11,7 @@ const redirect = (url) => {
     <article>
         <aside>
             <slot name="icon">
-                <img src="@/assets/works/Positivus.png" alt="Interface web">
+                <img src="@/assets/works/positivus.png" alt="Interface web">
             </slot>
         </aside>
         <header>

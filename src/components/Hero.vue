@@ -15,7 +15,7 @@ import Button from './base/Button.vue';
             <Button>On discute ?</Button>
         </article>
         <aside>
-            <img src="https://avatar.iran.liara.run/public" />
+            <img src="@/assets/avatar.png" alt="Mon avatar"/>
         </aside>
     </section>
 </template>

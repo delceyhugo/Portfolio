@@ -10,27 +10,27 @@
             <h1>hugo.delcey</h1>
         </aside>
         <ul>
-            <span></span>
             <li>
                 <a href="#">Qui suis-je</a>
+                <span></span>
             </li>
-            <span></span>
             <li>
                 <a href="#">Portfolio</a>
+                <span></span>
             </li>
-            <span></span>
             <li>
                 <a href="#">Contact</a>
+                <span></span>
             </li>
-            <span></span>
             <li>
                 <a href="#">CV</a>
+                <span></span>
             </li>
-            <span class="last"></span>
             <li>
                 <a href="#">
-                    <img src="@/assets/Menu.png" alt="menu">
+                    <img src="@/assets/icon/menu.png" alt="menu">
                 </a>
+                <span class="last"></span>
             </li>
         </ul>
     </nav>
@@ -65,19 +65,6 @@ nav{
     ul{
         display: flex;
         flex-direction: row;
-        >span{
-            position: relative;
-            // top: 0;
-            // left: 0;
-            width: 2px;
-            height: 100%;
-            background-color: var(--color-black);
-            &.last{
-                display: none;
-            }
-            
-        }
-
         li{
             list-style: none;
             padding: 0px 20px;
@@ -87,11 +74,29 @@ nav{
             cursor: pointer;
             transition: all 0.15s ease-in-out;
             border: 2px solid transparent;
+
+            >span{
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                width: 2px;
+                height: calc(100% + 4px);
+                background-color: var(--color-black);
+                transition: all 0.15s ease-in-out;
+                &.last{
+                    display: none;
+                }
+            }
+
+
             &:hover{
                 background-color: var(--color-yellow);
                 box-shadow: 4px 4px 0px var(--color-black);
                 transform: translate(-4px, -4px);
                 border: 2px solid var(--color-black);
+                >span{
+                    background-color: transparent;
+                }
                 
             }
             &:active{
@@ -107,7 +112,7 @@ nav{
                 font-weight: var(--font-bold);
                 color: var(--color-dark);
             }
-            &:nth-child(8){
+            &:nth-child(4){
                 border-radius: 0px 9px 9px 0px;
             }
             &:last-child{

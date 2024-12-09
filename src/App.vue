@@ -28,7 +28,7 @@ import Footer from './components/Footer.vue';
         </DoSection>
         <DoSection>
           <template v-slot:icon>
-            <img width="100" height="100" src="https://img.icons8.com/clouds/100/web-settings.png" alt="web-settings"/>
+            <img width="100" height="100" src="@/assets/icon/web.png" alt="web-settings"/>
           </template>
           <template v-slot:title>
             Côté serveur
@@ -43,7 +43,7 @@ import Footer from './components/Footer.vue';
         </DoSection>
         <DoSection>
           <template v-slot:icon>
-            <img width="100" height="100" src="https://img.icons8.com/clouds/100/learning.png" alt="learning"/>
+            <img width="100" height="100" src="@/assets/icon/skill.png" alt="learning"/>
           </template>
           <template v-slot:title>
             Compétences variées

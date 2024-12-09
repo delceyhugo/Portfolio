@@ -26,9 +26,9 @@ const redirect = (url) => {
                     Ou retrouvez-moi sur :
                 </h2>
                 <div>
-                    <img @click="redirect('https://github.com/delceyhugo')" width="40" height="40" src="https://img.icons8.com/badges/48/github.png" alt="github"/>
-                    <img @click="redirect('https://www.linkedin.com/in/hugo-delcey-240bb4174/')" width="40" height="40" src="https://img.icons8.com/badges/40/linkedin.png" alt="linkedin"/>
-                    <img @click="redirect('https://x.com/DelceyHugo')" width="40" height="40" src="https://img.icons8.com/badges/40/twitterx.png" alt="twitterx"/>
+                    <img @click="redirect('https://github.com/delceyhugo')" width="40" height="40" src="@/assets/icon/github.png" alt="github"/>
+                    <img @click="redirect('https://www.linkedin.com/in/hugo-delcey-240bb4174/')" width="40" height="40" src="@/assets/icon/linkedin.png" alt="linkedin"/>
+                    <img @click="redirect('https://x.com/DelceyHugo')" width="40" height="40" src="@/assets/icon/x.png" alt="twitterx"/>
                 </div>
             </aside>
         </article>
@@ -66,8 +66,8 @@ section{
             display: flex;
             flex-direction: column;
             h2{
-                opacity: 0.5;
-                color: var(--color-black);
+                opacity: 1;
+                color: rgba(0, 0, 0, 0.6);
                 font-size: 20px;
                 font-weight: var(--font-regular);
                 line-height: 28px;
@@ -75,8 +75,17 @@ section{
             a{
                 color: var(--color-dark);
             }
-            img{
-                cursor: pointer;
+            div{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                img{
+                    cursor: pointer;
+                    transition: all 0.15s ease-in-out;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
             }
 
         }

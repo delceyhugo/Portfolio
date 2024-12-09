@@ -8,7 +8,7 @@ import Link from './Link.vue';
     <article>
         <aside>
             <slot name="icon">
-                <img src="https://img.icons8.com/clouds/100/web.png" alt="Icon d'interface web">
+                <img src="@/assets/icon/interface.png" alt="Icon d'interface web">
             </slot>
         </aside>
         <h2>
