@@ -66,6 +66,12 @@ body {
         line-height: 25px;
         text-decoration: none;
     }
+    a.button{
+        font-family: var(--font-mono) !important;
+        font-weight: var(--font-bold);
+        font-size: 29px;
+        color: var(--color-dark);
+    }
 }
 
 #app{

@@ -12,7 +12,9 @@ import Button from './base/Button.vue';
             <p>
                 Développeur curieux et polyvalent, je me spécialise en Frontend tout en explorant le Backend avec JavaScript et PHP.
             </p>
-            <Button>On discute ?</Button>
+            <Button>
+                <a class="button" href="#Contact">On discute ?</a>
+            </Button>
         </article>
         <aside>
             <img src="@/assets/avatar.png" alt="Mon avatar"/>

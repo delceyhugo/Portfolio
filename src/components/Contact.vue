@@ -2,13 +2,13 @@
 import Button from './base/Button.vue';
 
 const redirect = (url) => {
-    window.location.href = url
+    window.open(url, '_blank').focus();
 }
 </script>
 
 
 <template>
-    <section>
+    <section id="Contact">
         <article>
             <h1>Un message suffit</h1>
             <p>

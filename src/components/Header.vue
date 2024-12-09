@@ -1,4 +1,9 @@
 <script setup>
+import { ref } from 'vue';
+
+const menu = ref(false)
+
+
 
 </script>
 
@@ -11,25 +16,47 @@
         </aside>
         <ul>
             <li>
-                <a href="#">Qui suis-je</a>
+                <a href="#Overview">Qui suis-je</a>
                 <span></span>
             </li>
             <li>
-                <a href="#">Portfolio</a>
+                <a href="#Highlight">Portfolio</a>
                 <span></span>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#Contact">Contact</a>
                 <span></span>
             </li>
             <li>
-                <a href="#">CV</a>
+                <a href="">CV</a>
                 <span></span>
             </li>
-            <li>
-                <a href="#">
+            <li @click="menu = !menu">
+                <button >
                     <img src="@/assets/icon/menu.png" alt="menu">
-                </a>
+                    <ul v-if="menu">
+                        <li>
+                            <a href="#Overview">
+                                <img src="@/assets/icon/me.png" alt="Qui suis-je">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Highlight">
+                                <img src="@/assets/icon/portfolio.png" alt="Portfolio">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Contact">
+                                <img src="@/assets/icon/contact.png" alt="Contact">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="@/assets/icon/cv.png" alt="CV">
+                            </a>
+                        </li>
+                    </ul>
+                </button>
                 <span class="last"></span>
             </li>
         </ul>
@@ -74,7 +101,6 @@ nav{
             cursor: pointer;
             transition: all 0.15s ease-in-out;
             border: 2px solid transparent;
-
             >span{
                 position: absolute;
                 top: -2px;
@@ -87,8 +113,6 @@ nav{
                     display: none;
                 }
             }
-
-
             &:hover{
                 background-color: var(--color-yellow);
                 box-shadow: 4px 4px 0px var(--color-black);
@@ -97,7 +121,6 @@ nav{
                 >span{
                     background-color: transparent;
                 }
-                
             }
             &:active{
                 background-color: var(--color-yellow);
@@ -127,6 +150,53 @@ nav{
                 display: none;
                 &:last-child{
                     display: flex;
+
+
+
+
+
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+
+
+
+                        ul{
+                            position: absolute;
+                            top: 110%;
+                            left: 0px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0px;
+                            padding: 0px;
+                            border: 2px solid var(--color-black);
+                            border-radius: 12px 12px 12px 12px;
+                            box-shadow: 4px 4px 0px var(--color-black);
+                            background-color: var(--color-white);
+                            transition: all 0.15s ease-in-out;
+                            li{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 0px;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 0px;
+                                box-shadow: none;
+                                background-color: transparent;
+                                transition: all 0.15s ease-in-out;
+                                a{
+                                    font-family: var(--font-grotesk);
+                                    font-size: 29px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             >span{

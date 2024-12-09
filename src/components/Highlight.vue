@@ -5,7 +5,7 @@ import Button from './base/Button.vue';
 import Link from './base/Link.vue';
 
 const redirect = (url) => {
-    window.location.href = url
+    window.open(url, '_blank').focus();
 }
 </script>
 

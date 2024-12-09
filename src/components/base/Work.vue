@@ -2,7 +2,7 @@
 import Link from './Link.vue';
 import Labels from './Labels.vue';
 const redirect = (url) => {
-    window.location.href = url
+    window.open(url, '_blank').focus();
 }
 </script>
 
