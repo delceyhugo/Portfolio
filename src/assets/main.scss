@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-mono: 'Space Mono', monospace;
+    --font-grotesk: 'Space Grotesk', sans-serif;
+    --font-code: 'Source Code Pro', monospace;
+    --font-cabin: 'Cabin', sans-serif;
+    --color-yellow: #F7CB45;
+    --color-pink: #FF91E7;
+    --color-teal: #22A094;
+    --color-red: #D75988;
+    --color-blue: #91A8ED;
+    --color-neutral: #F8F4F1;
+    --color-white: #FFFFFF;
+    --color-dark: #191919;
+    --color-black: #000000;
+    --color-dark-light: #52514E;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+body {
+    background-color: var(--color-neutral);
+    h1{
+        font-family: var(--font-grotesk);
+        font-weight: var(--font-medium);
+        font-size: 48px;
+        line-height: auto;
+        @media screen and (max-width: 440px) {
+            font-size: 36px;
+        }
+        &.mob{
+            font-size: 36px !important;
+        }
+    }
+    h2{
+        font-family: var(--font-grotesk);
+        font-weight: var(--font-bold);
+        font-size: 28px;
+        line-height: 34px;
+    }
+    p{
+        font-family: var(--font-cabin);
+        font-weight: var(--font-regular);
+        font-size: 20px;
+        line-height: 28px;
+        @media screen and (max-width: 440px) {
+            font-size: 18px !important;
+        }
+        &.secondary{
+            font-family: var(--font-mono);
+            font-size: 16px;
+            line-height: auto;
+        }
+    }
+    a{
+        font-family: var(--font-grotesk);
+        font-weight: var(--font-medium);
+        font-size: 18px;
+        line-height: 25px;
+        text-decoration: none;
+    }
+}
+
+#app{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    align-items: center;
+}
