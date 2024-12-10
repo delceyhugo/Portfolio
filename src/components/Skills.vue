@@ -185,7 +185,7 @@ const otherSkills = ref([
             Les compétences qui me définissent
         </h1>
         <main>
-            <section>
+            <section class="anim-from-right">
                 <h2>Faire briller l’interface</h2>
                 <div>
                     <Labels v-for="skill in frontSkills" :color="skill.color">
@@ -193,7 +193,7 @@ const otherSkills = ref([
                     </Labels>
                 </div>
             </section>
-            <section>
+            <section class="anim-from-left">
                 <h2>L’invisible mais essentiel</h2>
                 <div>
                     <Labels v-for="skill in backSkills" :color="skill.color">
@@ -201,7 +201,7 @@ const otherSkills = ref([
                     </Labels>
                 </div>
             </section>
-            <section>
+            <section class="anim-from-right">
                 <h2>Au-delà du code</h2>
                 <div>
                     <Labels v-for="skill in otherSkills" :color="skill.color">
@@ -209,7 +209,7 @@ const otherSkills = ref([
                     </Labels>
                 </div>
             </section>
-            <section id="softSkills">
+            <section class="anim-from-left" id="softSkills">
                 <h2>Au-delà des compétences techniques</h2>
                 <article>
                     <div>
@@ -274,7 +274,7 @@ section{
                         p{
                             font-family: var(--font-mono);
                             font-weight: var(--font-regular);
-                            font-size: 16px;
+                            font-size: 16px !important;
                             line-height: normal;
                         }
                     }

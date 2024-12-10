@@ -9,7 +9,7 @@ const menu = ref(false)
 
 
 <template>
-    <nav>
+    <nav class="anim-from-top">
         <aside>
             <img src="@/assets/logo.svg" alt="Logo">
             <h1>hugo.delcey</h1>
@@ -87,6 +87,9 @@ nav{
             font-size: 29px;
             font-weight: var(--font-bold);
             color: var(--color-dark);
+            @media screen and (max-width: 440px) {
+            font-size: 20px;
+            }
         }
     }
     ul{

@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+// Fonts
+@import url('./fonts/fonts.css');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -80,4 +82,5 @@ body {
     flex-direction: column;
     gap: 85px;
     align-items: center;
+    overflow-x: hidden;
 }

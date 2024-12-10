@@ -14,7 +14,7 @@ const redirect = (url) => {
     <section id="Highlight">
         <h1>Ce dont je suis fier</h1>
 
-        <section id="Game">
+        <section id="Game" class="anim-from-center">
                 <h2>Estate Empire</h2>
                 <p id="p1">
                     Estate Empire est mon projet le plus ambitieux et la réalisation d’un rêve d’enfance : concevoir un jeu vidéo de A à Z, et tout ça sans aucune expérience ni connaissance. 
@@ -41,8 +41,8 @@ const redirect = (url) => {
         </section>
 
         <section id="Works">
-            <Work />
-            <Work>
+            <Work class="anim-from-left" />
+            <Work class="anim-from-center">
                 <template v-slot:icon>
                     <img width="100%" src="@/assets/works/starryweather.png" alt="image d'interface" />
                 </template>
@@ -64,7 +64,7 @@ const redirect = (url) => {
                     </Link>
                 </template>
             </Work>
-            <Work>
+            <Work class="anim-from-right">
                 <template v-slot:icon>
                     <img width="100%" src="@/assets/works/api.png" alt="api" />
                 </template>
@@ -131,6 +131,13 @@ const redirect = (url) => {
         box-shadow: 4px 4px 0px var(--color-black);
         background-color: var(--color-white);
         transition: all 0.15s ease-in-out;
+
+        @media screen and (max-width: 500px) {
+            max-width: 90%;
+            p{
+                min-width: fit-content !important;
+            }
+        }
 
         &:hover{
             box-shadow: 8px 8px 0px var(--color-black);

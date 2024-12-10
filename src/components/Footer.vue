@@ -24,7 +24,6 @@ window.addEventListener('resize', setLogoCount)
 
 <style lang='scss' scoped>
 footer{
-    // display: flex;
     overflow: hidden;
     width: 100%;
     >div{

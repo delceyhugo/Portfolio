@@ -57,6 +57,13 @@ article{
     background-color: var(--color-white);
     transition: all 0.15s ease-in-out;
 
+    @media screen and (max-width: 500px) {
+        max-width: 90%;
+        p{
+            min-width: fit-content !important;
+        }
+    }
+
     &:hover{
         box-shadow: 8px 8px 0px var(--color-black);
         transform: translate(-4px, -4px);

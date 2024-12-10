@@ -5,7 +5,7 @@ import Link from './Link.vue';
 
 
 <template>
-    <article>
+    <article class="anim-from-center">
         <aside>
             <slot name="icon">
                 <img src="@/assets/icon/interface.png" alt="Icon d'interface web">
@@ -50,6 +50,13 @@ article{
     box-shadow: 4px 4px 0px var(--color-black);
     background-color: var(--color-white);
     transition: all 0.15s ease-in-out;
+
+    @media screen and (max-width: 500px) {
+        max-width: 90%;
+        p{
+            min-width: fit-content !important;
+        }
+    }
 
     &:hover{
         box-shadow: 8px 8px 0px var(--color-black);

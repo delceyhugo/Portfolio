@@ -9,7 +9,7 @@ const redirect = (url) => {
 
 <template>
     <section id="Contact">
-        <article>
+        <article class="anim-from-left">
             <h1>Un message suffit</h1>
             <p>
                 Un projet en tête, une question qui brûle ou juste envie de discuter ?<br>
@@ -32,7 +32,7 @@ const redirect = (url) => {
                 </div>
             </aside>
         </article>
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form class="anim-from-right" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="56306e44-e705-4d34-91d0-b7e89556208b">
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <div>
@@ -113,13 +113,16 @@ section{
             border: 2px solid var(--color-black);
             border-radius: 12px;
             box-shadow: 4px 4px 0px var(--color-black);
+            outline: none;
+            transition: all 0.15s ease-in-out;
             // Font
             font-family: var(--font-grotesk);
             font-weight: var(--font-regular);
             font-size: 18px;
             color: var(--color-dark);
             &:focus{
-                border: 2px solid var(--color-red);
+                box-shadow: 0px 0px 0px var(--color-black);
+                transform: translate(4px, 4px);
             }
             &::placeholder{  
                 color: rgba(0, 0, 0, 0.5);

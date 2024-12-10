@@ -6,7 +6,7 @@ import Button from './base/Button.vue';
 
 <template>
     <section id="Hero">
-        <article>
+        <article class="anim-from-left">
             <h1>Hello, je m’appelle Hugo.</h1>
             <h2>développeur web</h2>
             <p>
@@ -16,7 +16,7 @@ import Button from './base/Button.vue';
                 <a class="button" href="#Contact">On discute ?</a>
             </Button>
         </article>
-        <aside>
+        <aside class="anim-from-right">
             <img src="@/assets/avatar.png" alt="Mon avatar"/>
         </aside>
     </section>

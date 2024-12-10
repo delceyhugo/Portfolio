@@ -8,8 +8,9 @@ import OtherWorks from './components/OtherWorks.vue';
 import Skills from './components/Skills.vue';
 import Contact from './components/Contact.vue';
 
-
 import Footer from './components/Footer.vue';
+
+import Animation from './components/base/Animation.vue';
 
 </script>
 
@@ -66,6 +67,8 @@ import Footer from './components/Footer.vue';
 
   <Footer />
 
+  <Animation></Animation>
+
 </template>
 
 
@@ -99,9 +102,6 @@ main{
       justify-content: center
     }
   }
-
-
-
   // Responsive
   @media screen and (max-width: 1000px) {
     padding: 0px 30px;
