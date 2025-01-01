@@ -36,6 +36,10 @@ const fromCenter = new IntersectionObserver(entries => {
 }, {threshold: .3})
 
 window.onload = () => {
+  var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+  var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+  var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+  if (is_safari || is_explorer || is_opera) return
   document.querySelectorAll('.anim-from-left').forEach(el => fromLeft.observe(el))
   document.querySelectorAll('.anim-from-right').forEach(el => fromRight.observe(el))
   document.querySelectorAll('.anim-from-top').forEach(el => fromTop.observe(el))
