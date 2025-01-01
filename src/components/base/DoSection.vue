@@ -52,7 +52,7 @@ article{
     transition: all 0.15s ease-in-out;
 
     @media screen and (max-width: 500px) {
-        max-width: 90%;
+        min-width: 90%;
         p{
             min-width: fit-content !important;
         }

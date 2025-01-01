@@ -262,6 +262,15 @@ section{
                 flex-direction: column;
                 gap: 10px;
                 align-items: center;
+                @media screen and (max-width: 500px) {
+                    align-items: center;
+                    text-align: center;
+                    article{
+                        div{
+                            justify-content: center !important;
+                        }
+                    }
+                }
                 article{
                     display: flex;
                     flex-direction: column;

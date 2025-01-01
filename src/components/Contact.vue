@@ -62,6 +62,14 @@ section{
         gap: 30px;
         min-width: 400px;
         flex: 1;
+        @media screen and (max-width: 500px) {
+        min-width: 90%;
+        align-items: center;
+        text-align: center;
+        aside{
+            align-items: center;
+        }
+        }
         aside{
             display: flex;
             flex-direction: column;
@@ -98,6 +106,12 @@ section{
         gap: 30px;
         align-items: flex-end;
         min-width: 400px;
+        @media screen and (max-width: 500px) {
+        min-width: 90%;
+        div{
+            flex-direction: column !important;
+        }
+        }
         div{
             display: flex;
             flex-direction: row;
