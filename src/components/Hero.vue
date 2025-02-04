@@ -17,7 +17,7 @@ import Button from './base/Button.vue';
             </Button>
         </article>
         <aside class="anim-from-right">
-            <img src="@/assets/avatar.png" alt="Mon avatar"/>
+            <img src="@/assets/picme.png" alt="Mon avatar"/>
         </aside>
     </section>
 </template>
@@ -86,6 +86,9 @@ section{
             height: 100%;
             width: auto;
             max-width: 80vw;
+            border-radius: 50%;
+            border: 2px solid var(--color-black);
+            box-shadow: 4px 4px 0px var(--color-black);
         }
     }
 }
