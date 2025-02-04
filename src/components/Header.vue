@@ -28,7 +28,7 @@ const menu = ref(false)
                 <span></span>
             </li>
             <li>
-                <a href="">CV</a>
+                <a target="_blank" href="https://drive.google.com/file/d/1R2Ft0VzkxHfNieBKRraDqUOQOPuseMEL/view?usp=sharing">CV</a>
                 <span></span>
             </li>
             <li @click="menu = !menu">
