@@ -51,7 +51,7 @@ const menu = ref(false)
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a target="_blank" href="https://drive.google.com/file/d/1R2Ft0VzkxHfNieBKRraDqUOQOPuseMEL/view?usp=sharing">
                                 <img src="@/assets/icon/cv.png" alt="CV">
                             </a>
                         </li>
